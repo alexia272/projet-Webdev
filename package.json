@@ -1,0 +1,8 @@
+{
+    "name": "Domaine_Berger_des_vignes",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "alexiaberger",
+    "contributors": [],
+    "dependencies": {}
+}
