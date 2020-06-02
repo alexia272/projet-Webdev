@@ -9,8 +9,80 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/contact.css" rel="stylesheet" type="text/css">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <nav id="arborescence">
+                <a href="../">Accueil</a>
+                <p>&gt;</p>
+                <a href="">Contact</a>
+            </nav>
+            
+            <section id="haut_de_page">
+                <h3 class='titre_non_affiches'>Haut de page</h3>
+                <img src="../images/contact/local.png" alt="Photo du local de l'entreprise froid solution "/>
+                <article id="titre">
+                    <h1>Contact</h1>
+                </article>
+
+                <article id="coordo">
+                    <h5>Nos coordonnées :</h5>
+                    <p>Domaine Berger des vignes </p>
+                    <p>1107 route de Chalier</p>
+                    <p>69480 Pommiers</p>
+                    <p class="red" id="numero">04.74.65.07.09</p>
+                    <p>froidsolution@gmail.com</p>
+                </article>
+            </section>
+        </header>
+
+        <section id="principale">
+            <h3 class="titre_non_affiches">Partie principale de la page</h3>
+
+            <article id="map">
+                <h5>Nous trouver : </h5>
+
+             <iframe src="https://www.google.fr/maps/place/Domaine+berger+des+vignes/@45.968686,4.6812571,1197m/data=!3m1!1e3!4m13!1m7!3m6!1s0x47f4859a9a0a400b:0x95f7bebfec65e7bd!2s1107+Route+de+la+Cr%C3%A8te+de+Chalier,+69480+Pommiers!3b1!8m2!3d45.9717118!4d4.6820864!3m4!1s0x47f48588d768e1eb:0xc4a14748031db251!8m2!3d45.9650132!4d4.6778691" width="600" height="540" allowfullscreen></iframe>
+            </article>   
+
+            <article id="mail">
+                <h5>Nous contacter : </h5>
+
+                <fieldset id="formulaire">
+                    <div>
+                        <label for="Nom">Nom :</label> 
+                        <input autocomplete="family-name" type="text" name="Nom" id="Nom">
+                    </div>
+
+                    <div>
+                        <label for="Prenom" >Prénom :</label> 
+                        <input autocomplete="given-name" type="text" name="Prenom" id="Prenom">
+                    </div>
+                    
+                     <div>
+                        <label for="Email" >Prénom :</label> 
+                        <input autocomplete="Email" type="text" name="Email" id="Email">
+                    </div>
+
+                    <div>
+                        <label for="Sujet">Sujet :</label> 
+                        <input autocomplete="off" type="text" name="Sujet" id="Sujet">
+                    </div>
+
+                    <label for="demande">Votre message :</label> 
+                    <textarea  id="demande" name="demande" placeholder="Une question ?" rows="8" cols="33"></textarea>
+
+                    <div id="verif">
+                        <a id="envoie">Envoyer</a>
+                        <a id="effacer">Effacer</a>
+                    </div>
+                </fieldset>
+            </article>
+        </section>
+        <footer>
+            
+        </footer>
     </body>
 </html>
