@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 juin 2020, 17:48:53
+    Author     : MARQUANT
+*/
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+html
+{
+    background: linear-gradient(to top,rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url("../images/fondaccueil.jpg");
+    background-size: 100% 100%;
+}
+
+h1
+{
+    text-align: center;
+    height: fit-content;
+}
+
+h5
+{
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+/* CSS pour le header (titre, image, cadre coordo) */
+#haut_de_page
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img
+{
+    height: 223px;
+}
+
+#titre
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+}
+
+#titre h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+#coordo
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    border-style: solid; 
+    border-color: blue;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: fit-content;
+    background: linear-gradient(to top,rgba(255,255,255,0.4),rgba(255,255,255,0.4));
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#coordo h5
+{
+    display: none;
+}
+
+#coordo p
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#numero
+{
+    background: url(../images/red-296733_960_720.png);
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    overflow:visible;
+}
+
+
+
+/* CSS pour la section principale de la page (carte, formulaire) */
+#principale
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* CSS pour l'affichage de la carte */
+#map
+{
+    width: 45%;
+}
+
+
+
+/* CSS pour le formulaire mail */
+#mail
+{
+    width: 45%;
+    align-items: center;
+}
+
+fieldset
+{
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+#formulaire div
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#formulaire input
+{
+    height: 30px;
+}
+
+#formulaire input, #formulaire textarea
+{
+    width: 100%;
+    border: 0.1px solid grey;
+}
+
+#verif
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#verif a
+{
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    border-style: solid;
+    border-width: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    user-select:none;
+}
+
+#verif p
+{
+    color: red;
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#effacer, #envoie
+{
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:1220px)
+{
+    #principale
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #haut_de_page
+    {
+        flex-direction: column;
+    }
+    #haut_de_page img
+    {
+        display: none;
+    }
+    #map
+    {
+        width: 100%;
+    }
+
+    #mail
+    {
+        width: 100%;
+    }
+}
